@@ -192,8 +192,11 @@ public class RecommendationSystem{
        
        for(int movie_Id1 : movie.keySet()){
     	   for(int movie_Id2 : movie.keySet()){
+    		   if(movie_Id2 > movie_Id1){
     		   similarity = computeSimilarity(movie_Id1, movie_Id2, rating);      
     		   similarityList[movie_Id1-1][movie_Id2-1] = similarity;
+    		   similarityList[movie_Id2-1][movie_Id1-1] = similarity;
+    		   }
     	   }
        }
        
