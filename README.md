@@ -1,4 +1,4 @@
-# RecommendationSystem
+# Recommendation System
 Recommendation system based on cosine (pair-wise) similarity.
 
 Item-based recommendation system based on past ratings of items. In this iteration, the items are movies. The input to the recommendation system is a dataset consisting of 100,000 ratings from roughly 1,000 users on about 1,700 movies. 
